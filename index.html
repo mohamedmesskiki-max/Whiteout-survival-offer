@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whiteout Survival | Exclusive Offer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Design and Calm Colors (Arctic Theme) --- */
+        :root {
+            --color-dark-blue: #0a1f44;
+            --color-medium-blue: #15325c;
+            --color-light-blue: #4a6c8e;
+            --color-white: #ffffff;
+            --color-background: #f0f4f8; /* Comfortable background color */
+            --color-cta: #e53935; /* Vivid red for the button */
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--color-background);
+            margin: 0;
+            padding: 0;
+            color: #333;
+            direction: ltr;
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        /* --- Main Header --- */
+        .header {
+            background: linear-gradient(135deg, var(--color-dark-blue) 0%, var(--color-medium-blue) 100%);
+            color: var(--color-white);
+            padding: 80px 20px 120px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 5px;
+            font-weight: 700;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .header p {
+            font-size: 1.3em;
+            opacity: 0.9;
+            margin-top: 0;
+        }
+
+        /* --- Main Sections --- */
+        .container {
+            max-width: 1200px;
+            margin: -60px auto 40px; 
+            padding: 0 20px;
+        }
+
+        /* --- Call to Action (CTA) Button --- */
+        .cta-section {
+            text-align: center;
+            margin: 40px 0;
+            padding: 40px;
+            background-color: var(--color-white);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            border-top: 5px solid var(--color-light-blue);
+        }
+        
+        .cta-section h2 {
+            color: var(--color-dark-blue);
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--color-cta);
+            color: var(--color-white);
+            font-size: 1.8em;
+            font-weight: 700;
+            padding: 18px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 6px 12px rgba(229, 57, 53, 0.5);
+            border: none;
+            cursor: pointer;
+            animation: pulse 1.5s infinite; 
+        }
+        
+        .cta-button:hover {
+            background-color: #d32f2f;
+            transform: scale(1.05);
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(229, 57, 53, 0.4); }
+            70% { transform: scale(1.02); box-shadow: 0 0 0 10px rgba(229, 57, 53, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(229, 57, 53, 0); }
+        }
+
+        /* --- Image Gallery Section --- */
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            border: 3px solid var(--color-white);
+        }
+        
+        /* --- Customer Reviews Section --- */
+        .reviews-section {
+            padding: 50px 0;
+            margin-top: 30px;
+            background-color: var(--color-white);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .reviews-section h2 {
+            text-align: center;
+            color: var(--color-dark-blue);
+            font-size: 2.2em;
+            margin-bottom: 40px;
+        }
+
+        .reviews-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 0 20px;
+        }
+
+        .review-card {
+            background-color: var(--color-background);
+            flex-basis: calc(33% - 40px);
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid var(--color-medium-blue);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            min-width: 250px;
+        }
+
+        .review-card strong {
+            color: var(--color-cta);
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        /* --- Media Queries for Responsiveness --- */
+        @media (max-width: 900px) {
+            .reviews-grid {
+                justify-content: center;
+            }
+            .review-card {
+                flex-basis: calc(50% - 30px);
+                margin: 15px;
+            }
+        }
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2.2em;
+            }
+            .header p {
+                font-size: 1em;
+            }
+            .cta-button {
+                font-size: 1.5em;
+                padding: 15px 30px;
+            }
+            .review-card {
+                flex-basis: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>WHITEOUT SURVIVAL</h1>
+    <p>The Ultimate Arctic Strategy Game | **Your Exclusive Offer is Here!**</p>
+</div>
+
+<div class="container">
+
+    <div class="cta-section">
+        <h2>🔥 Claim Your FREE Survival Resource Pack Now! 🔥</h2>
+        <p style="font-size: 1.2em; color: #555; margin-bottom: 30px;">
+            Don't miss out on rare resources and a unique hero character, available only through this link!
+        </p>
+        <a href="**[INSERT YOUR OFFER/DOWNLOAD LINK HERE]**" class="cta-button">
+            Click to Claim Your Exclusive Rewards!
+        </a>
+    </div>
+    
+    <h2 style="text-align: center; color: var(--color-dark-blue); margin-top: 40px;">See the Game in Action!</h2>
+    <div class="image-gallery">
+        <img src="**[IMAGE LINK 1 HERE]**" alt="Whiteout Survival Gameplay Screenshot 1">
+        <img src="**[IMAGE LINK 2 HERE]**" alt="Whiteout Survival Gameplay Screenshot 2">
+        <img src="**[IMAGE LINK 3 HERE]**" alt="Whiteout Survival Gameplay Screenshot 3">
+    </div>
+
+    <div class="reviews-section">
+        <h2>What Players Are Saying</h2>
+        
+        <div class="reviews-grid">
+            <div class="review-card">
+                <strong>Ahmed M. (5 Stars)</strong>
+                <p>An amazing strategy game! Managing resources against the brutal cold is a thrilling experience. Highly recommended for fans of the genre.</p>
+            </div>
+
+            <div class="review-card">
+                <strong>Fatima L.</strong>
+                <p>Deep content and constant updates. I didn't expect to be hooked like this. The alliance system is fantastic!</p>
+            </div>
+            
+            <div class="review-card">
+                <strong>Khaled S.</strong>
+                <p>Great graphics and a solid community. The exclusive offer was a huge boost for me when I started. Don't skip it!</p>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+
+<div class="footer" style="text-align: center; padding: 20px; background-color: var(--color-dark-blue); color: #ccc; font-size: 0.9em; margin-top: 40px;">
+    &copy; 2025 Whiteout Survival - Special Offer. All Rights Reserved.
+</div>
+
+</body>
+</html>
